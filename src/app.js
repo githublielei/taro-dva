@@ -24,21 +24,21 @@ class App extends Component {
   config = {
     pages: [
       'pages/index/index',
-      'pages/discovery/discovery',
+      'pages/pet/pet',
       'pages/more/more',
-      'pages/answer/answer',
-      'pages/question/question'
+      'pages/party/party',
+      'pages/me/me'
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#0068C4',
-      navigationBarTitleText: 'taro知乎',
-      navigationBarTextStyle: 'white',
+      navigationBarBackgroundColor: '#ffffff',
+      navigationBarTitleText: '萌宠',
+      navigationBarTextStyle: 'black',
       enablePullDownRefresh: true
     },
     tabBar: {
       color: "#626567",
-      selectedColor: "#2A8CE5",
+      selectedColor: "#ffffff",
       backgroundColor: "#FBFBFB",
       borderStyle: "white",
       list: [{
@@ -47,17 +47,30 @@ class App extends Component {
         iconPath: "./asset/images/index.png",
         selectedIconPath: "./asset/images/index_focus.png"
       }, {
-        pagePath: "pages/discovery/discovery",
-        text: "发现",
-        iconPath: "./asset/images/discovery.png",
-        selectedIconPath: "./asset/images/discovery_focus.png"
+        pagePath: "pages/pet/pet",
+        text: "萌宠圈",
+        iconPath: "./asset/images/pet.png",
+        selectedIconPath: "./asset/images/pet.png"
       },
         {
           pagePath: "pages/more/more",
+          iconPath: "./asset/images/plus.png",
+          selectedIconPath: "./asset/images/plus.png"
+        },
+        {
+          pagePath: "pages/party/party",
+          text: "聚会",
+          iconPath: "./asset/images/party.png",
+          selectedIconPath: "./asset/images/party.png"
+        },
+        {
+          pagePath: "pages/me/me",
           text: "我的",
-          iconPath: "./asset/images/burger.png",
-          selectedIconPath: "./asset/images/burger_focus.png"
-        }]
+          iconPath: "./asset/images/me.png",
+          selectedIconPath: "./asset/images/me.png"
+        },
+
+        ]
     }
   }
 
